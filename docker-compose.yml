@@ -1,0 +1,10 @@
+services:
+  mini_CRM:
+    image: mini_crm_image:latest
+    build:
+      context: .
+    container_name: mini_crm_app
+    command:
+      [ "bash", "/mini_crm/docker/app.sh" ]
+    ports:
+      - "8000:8000"
