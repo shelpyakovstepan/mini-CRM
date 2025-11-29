@@ -29,7 +29,55 @@ docker compose up
 
 Структура проекта:
 ```
-
+app
+    ├── bots
+    │   ├── dao.py
+    │   ├── models.py
+    │   ├── router.py
+    │   └── schemas.py
+    ├── clients
+    │   ├── dao.py
+    │   ├── models.py
+    │   ├── router.py
+    │   └── schemas.py
+    ├── contacts
+    │   ├── dao.py
+    │   ├── models.py
+    │   ├── router.py
+    │   ├── schemas.py
+    │   └── utils.py
+    ├── operators
+    │   ├── dao.py
+    │   ├── models.py
+    │   ├── router.py
+    │   └── schemas.py
+    ├── dao
+    │   └── base.py
+    ├── database.py
+    ├── exceptions.py
+    ├── logger.py
+    └── main.py
+├── docker
+    └── app.sh
+├── migrations
+    ├── README
+    ├── env.py
+    ├── script.py.mako
+    └── versions
+    │   ├── 498f93b5ed56_update_bots_model_2.py
+    │   ├── 5d724b14ab78_update_models_for_bots.py
+    │   ├── 6acc0da8f736_update_bots_model_2.py
+    │   └── ab1d5b2e5233_init_migration.py
+├── poetry.lock
+├── pyproject.toml
+├── pyrightconfig.json
+├── ruff.toml
+├── .isort.cfg
+├── Dockerfile
+├── docker-compose.yml
+├── LICENSE
+├── README.md
+└── alembic.ini
 ```
 Предметная область:
 ```
